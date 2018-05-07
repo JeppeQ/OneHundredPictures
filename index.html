@@ -2,12 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Crypto</title>
+        <title>OneHundred</title>
         <link rel="stylesheet" href="css/layout.css">
         <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/dropzone.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
-
+        <div class="Container-1">
+            <div class="title">
+                One Hundred Images On The Blockchain
+            </div>
+            <div class="entries-left">
+                Entries left<br/>
+                <span class="jsEntries" style="color:darkred;">98</span>
+            </div>
+            <form action="/file-upload" class="dropzone" id="uploadImage">
+                <div class="dz-message needsclick">
+                    Drop image here or click to upload.
+                </div>
+            </form>
+            <div class="requirements">
+                Max size: 800kb <br/>
+                jpeg, png, bmp
+            </div>
+            <div class="description">Images will be shown when all entries have been filled.</div>
+        </div>
+        <div class="Container-2" style="display:none;">
+            <div class="imageContainer">
+                                
+            </div>
+        </div>
     </body>
 </html>
